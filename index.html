@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Space Tourism | Frontend</title>
+     
+     <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+     <link rel="stylesheet" href="./assets/grid.css">
+     <!-- FONTS  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+
+     <!-- BOX ICON -->
+     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+     
+
+     <script src="./navigation.js" defer></script>
+
+</head>
+
+<body class="home">
+     <header class="primary_header">
+          <div>
+               <img src="./assets/img/shared/logo.svg" alt="Space Tourism Logo" class="logo">
+          </div>
+
+          <button class="mobile_nav_toggle" aria-expanded="false" aria-controls="primary_navigation" ></button>
+
+          <span class="header_line"></span>  
+          <nav>
+               <ul id="primary_navigation" class="primary_navigation underline_indicator" data-visible="false">
+                    <li class="nav_item active">
+                        <a href="index.html" class="ff-sans-cond ">
+                             <span>00</span>
+                             Home
+                        </a>
+                    </li>
+                    <li  class="nav_item ">
+                         <a href="destination.html" class="ff-sans-cond">
+                              <span>01</span>
+                              Destination
+                         </a>
+                    </li>
+                    <li  class="nav_item">
+                         <a href="crew.html" class="ff-sans-cond ">
+                              <span>02</span>
+                              crew
+                         </a>
+                    </li>
+                    <li  class="nav_item">
+                         <a href="technology.html" class="ff-sans-cond ">
+                              <span>03</span>
+                              Technology
+                         </a>
+                    </li>
+               </ul>
+          </nav>
+     </header>
+
+     <main id="main" class="grid_container grid_container--home">
+          <div class="home_info active">
+               <h1 class="left-to-right">
+                    So you want to travel to 
+                    <span>Space</span>
+               </h1>
+               <p>
+                    Let’s face it; if you want to go to space, you might as well genuinely go to 
+                    outer space and not hover kind of on the edge of it. Well sit back, and relax 
+                    because we’ll give you a truly out of this world experience!
+               </p>
+          </div>
+          <div class="home_explore">
+               <a href="destination.html" class="home_btn">
+                    Explore
+               </a>
+          </div>
+     </main>
+
+     
+</body>
+</html>

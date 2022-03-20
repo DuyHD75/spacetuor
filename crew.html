@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Space Tourism | Frontend</title>
+     
+     <!-- CSS -->
+     <link rel="stylesheet" href="./assets/style.css">
+     <link rel="stylesheet" href="./assets/grid.css">
+     <!-- FONTS  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+
+     <!-- BOX ICON -->
+     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+     
+     <!-- JS LINK -->
+     <script src="./navigation.js" defer></script>
+     <script src="./tab.js" defer></script>
+
+</head>
+<body class="crew">
+
+     <header class="primary_header">
+          <div>
+               <img src="./assets/img/shared/logo.svg" alt="Space Tourism Logo" class="logo">
+          </div>
+
+          <button class="mobile_nav_toggle" aria-expanded="false" aria-controls="primary_navigation" ></button>
+
+          <span class="header_line"></span>
+          <nav>
+               <ul id="primary_navigation" class="primary_navigation underline_indicator" data-visible="false">
+                    <li class="nav_item active">
+                        <a href="index.html" class="ff-sans-cond ">
+                             <span>00</span>
+                             Home
+                        </a>
+                    </li>
+                    <li  class="nav_item ">
+                         <a href="destination.html" class="ff-sans-cond">
+                              <span>01</span>
+                              Destination
+                         </a>
+                    </li>
+                    <li  class="nav_item">
+                         <a href="crew.html" class="ff-sans-cond ">
+                              <span>02</span>
+                              crew
+                         </a>
+                    </li>
+                    <li  class="nav_item">
+                         <a href="technology.html" class="ff-sans-cond ">
+                              <span>03</span>
+                              Technology
+                         </a>
+                    </li>
+               </ul>
+          </nav>
+     </header>
+
+     <div class="crew_main">
+          <div class="grid wide">
+               <div class="row">
+                    <div class="c-6">
+                         <h1 class="num_title ">
+                              <span aria-hidden="true">02</span>
+                              meet your crew
+                         </h1> 
+
+                         <article class="crew-details" id="commander-tab" role="tabpanel" tabindex="0" >                   
+                              <h2 class="left-to-right"> Commander</h2>
+
+                              <p class="crew_name left-to-right">Douglas Hurley</p>
+
+                              <p class="left-to-right">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+                                   and former NASA astronaut. He launched into space for the third time as 
+                                   commander of Crew Dragon Demo-2.
+                              </p>
+                         </article>
+
+                         <article hidden class="crew-details" id="mission-tab" role="tabpanel" tabindex="0" >                             
+                              <h2 class="left-to-right"> Mission Specialist</h2>
+
+                              <p class="crew_name left-to-right">Mark SHuttleworth</p>
+
+                              <p class="left-to-right">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
+                                   the Linux-based Ubuntu operating system. Shuttleworth became the first South
+                                   African to travel to space as a space tourist.
+                              </p>
+                         </article>
+
+                         <article hidden class="crew-details" id="pilot-tab" role="tabpanel" tabindex="0" >                             
+                              <h2 class="left-to-right delay-2"> Pilot</h2>
+                              
+                              <p class="crew_name left-to-right">Victor Glover</p>
+
+                              <p class="left-to-right">Pilot on the first operational flight of the SpaceX Crew Dragon to the
+                                   International Space Station. Glover is a commander in the U.S. Navy where
+                                   he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+                                   station systems flight engineer.
+                              </p>
+                         </article>
+
+                         <article hidden class="crew-details" id="crew-tab" role="tabpanel" tabindex="0" >
+                              <h2 class="left-to-right">Flight Engineer</h2>
+
+                              <p class="crew_name left-to-right">Anousheh Ansari</p>
+
+                              <p class="left-to-right">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+                                   Ansari was the fourth self-funded space tourist, the first self-funded woman to
+                                   fly to the ISS, and the first Iranian in space.
+                              </p>
+                         </article>
+
+
+                         <div class="dot-indicator flex" role="tablist" aria-label="crew number list">
+                              <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander_img" tabindex="0">
+                                   <!-- <span class="sr-only">The commander</span> -->
+                              </button>
+
+                              <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="mission_img" tabindex="-1">
+                                   <!-- <span class="sr-only">The mission Specialist</span> -->
+                              </button>
+
+                              <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="pilot_img" tabindex="-1">
+                                   <!-- <span class="sr-only">The pilot</span> -->
+                              </button>
+                              
+                              <button aria-selected="false" aria-controls="crew-tab" role="tab" data-image="crew_img" tabindex="-1">
+                                   <!-- <span class="sr-only">The crew engineer</span> -->
+                              </button>
+                         </div>
+                    </div>
+
+                    <div class="c-6">
+                         <div  class="crew_img" role="tab-img" id="commander_img">
+                              <img src="./assets/img/crew/image-douglas-hurley.png" alt="commander-image">
+                         </div>
+
+                         <div  class="crew_img" role="tab-img" id="mission_img" hidden>
+                              <img src="./assets/img/crew/image-mark-shuttleworth.png" alt="mission-image">
+                         </div>
+
+                         <div  class="crew_img" role="tab-img" id="pilot_img" hidden>
+                              <img src="./assets/img/crew/image-victor-glover.png" alt="pilot-image">
+                         </div>
+
+                         <div  class="crew_img" role="tab-img" id="crew_img" hidden>
+                              <img src="./assets/img/crew/image-anousheh-ansari.png" alt="crew-image">
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+
+</body>
+</html>
